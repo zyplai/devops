@@ -19,4 +19,4 @@ scrape_configs:
 ###        
     pipeline_stages:
       - static_labels:
-          host: "logs-promtail-test"
+          host: ${HOST_NAME}
