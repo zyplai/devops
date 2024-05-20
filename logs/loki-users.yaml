@@ -1,0 +1,4 @@
+users:
+  - username: promtail-logs
+    password: ASJD23gdstvch23
+    orgid: tenant-a
