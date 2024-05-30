@@ -62,7 +62,78 @@ scrape_configs:
       - targets: ['20.24.93.152:9100']
         labels:
           vm_name: ahli-micro-amc-weu-pd-vm
-
-
-
-          
+      - targets: ['20.239.54.164:9100']
+        labels:
+          vm_name: lucid-eaa-api-vm
+      - targets: ['20.97.8.184:9100']
+        labels:
+          vm_name: finca-guatemala-eaa-pd-back-vm
+      - targets: ['20.247.4.27:9100']
+        labels:
+          vm_name: bnk-eea-dev-back-vm
+      - targets: ['20.71.254.12:9100']
+        labels:
+          vm_name: spitamen-weu-prod-back-vm
+      - targets: ['20.203.38.200:9100']
+        labels:
+          vm_name: ahli-jordan-scoring-backend-test-vm
+      - targets: ['104.46.58.147:9100']
+        labels:
+          vm_name: activbank-weu-bf-pd-vm
+      - targets: ['13.74.16.153:9100']
+        labels:
+          vm_name: aloqabank-uz-scoring.transferforecast-backend-test-vm
+      - targets: ['20.187.74.88:9100']
+        labels:
+          vm_name: arnur-eaa-api-vm
+      - targets: ['20.229.166.254:9100']
+        labels:
+          vm_name: asia-weu-back-vm
+      - targets: ['40.118.10.244:9100']
+        labels:
+          vm_name: azfunc-weu-prod-back-vm
+      - targets: ['20.205.114.74:9100']
+        labels:
+          vm_name: capital-integration-eaa-prod-back-vm
+      - targets: ['20.187.64.37:9100']
+        labels:
+          vm_name: collection-scorapi-eeu-test-back-vm
+      - targets: ['20.239.49.203:9100']
+        labels:
+          vm_name: commercial-eaa-api-pd-vm
+      - targets: ['20.187.75.67:9100']
+        labels:
+          vm_name: finca-eaa-back-vm
+      - targets: ['20.239.251.77:9100']
+        labels:
+          vm_name: finca-jordan-eaa-dev-front-vm
+      - targets: ['20.16.250.71:9100']
+        labels:
+          vm_name: gulf-weu-prod-back-vm
+      - targets: ['20.187.124.161:9100']
+        labels:
+          vm_name: imon-eaa-api-vm
+      - targets: ['20.24.80.102:9100']
+        labels:
+          vm_name: naimi-eaa-dev-prod-back-vm
+      - targets: ['172.201.40.69:9100']
+        labels:
+          vm_name: redash-weu-test-vm
+      - targets: ['20.239.131.26:9100']
+        labels:
+          vm_name: zypl-career-eeu-test-front-vm
+      - targets: ['104.45.132.169:9100']
+        labels:
+          vm_name: zypl-forms-weu-prod-back-vm
+      - targets: ['13.80.112.155:9100']
+        labels:
+          vm_name: zypl-score-weu-pd-front-vm
+      - targets: ['20.189.122.141:9100']
+        labels:
+          vm_name: zyplscoreanalysis
+      - targets: ['172.205.212.119:9100']
+        labels:
+          vm_name: oxuc-weu-pd-back-vm
+      - targets: ['20.224.87.97:9100']
+        labels:
+          vm_name: mycar-weu-dev-prod-back-vm
