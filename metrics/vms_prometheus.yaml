@@ -47,13 +47,22 @@ scrape_configs:
       - targets: ['172.201.114.238:9100']
         labels:
           vm_name: logs-promtail-test
-
-    #cadvisor - test on logs test VM
-  - job_name: 'cadvisor'
-    scrape_interval: 10s
-    metrics_path: '/metrics'
-    static_configs:
-      — targets: ['172.201.114.238:9091']
+      - targets: ['20.4.66.1:9100']
         labels:
-          group: 'cadvisor'
-          docker_name: docker-logs
+          vm_name: aion-weu-prod-back-vm
+      - targets: ['52.148.201.103:9100']
+        labels:
+          vm_name: brt-weu-pd-back-vm
+      - targets: ['20.24.79.9:9100']
+        labels:
+          vm_name: finca-jordan-eaa-dev-back-vm
+      - targets: ['20.71.110.96:9100']
+        labels:
+          vm_name: swiss-weu-prod-dev-back-vm
+      - targets: ['20.24.93.152:9100']
+        labels:
+          vm_name: ahli-micro-amc-weu-pd-vm
+
+
+
+          
