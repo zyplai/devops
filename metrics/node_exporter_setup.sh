@@ -24,10 +24,19 @@ service prometheus status
 
 #_____________________________________________________________________
 #Setup Cadvisor
-# docker run -p 9091:8080 -d gcr.io/cadvisor/cadvisor —name=cadvisor \
-# -v /:/rootfs:ro \
-# -v /var/run:/var/run:rw \
-# -v /sys:/sys:ro \
-# -v /var/lib/docker/:/var/lib/docker:ro
+#Worker command
+docker run -d --rm --name=cadvisor \
+  -p 8080:8080 \
+  --volume=/var/run:/var/run:ro \
+  --volume=/sys:/sys:ro \
+  --volume=/var/lib/docker/:/var/lib/docker:ro \
+  --volume=/var/run/docker.sock:/var/run/docker.sock:ro \
+  gcr.io/cadvisor/cadvisor
+
+
+docker run -d --rm test-image:v1
+
+
+
 
 
