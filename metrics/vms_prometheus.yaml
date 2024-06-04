@@ -28,9 +28,13 @@ scrape_configs:
   - job_name: cadvisor
     scrape_interval: 5s
     static_configs:
-    - targets: [172.201.114.238:8080] #change to cadvisor
-      labels:
-            vm_name: cadvisor-logs-promtail-test
+      - targets: [172.201.114.238:8080]
+        labels:
+              vm_name_cadvisor: cadvisor-logs-promtail-test
+      - targets: [20.56.0.173:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-lucid-eaa-api-vm
+
 
 
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.

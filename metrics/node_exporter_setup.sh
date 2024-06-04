@@ -26,7 +26,7 @@ service prometheus status
 #Setup Cadvisor
 #Worker command
 docker run -d --rm --name=cadvisor \
-  -p 8080:8080 \
+  -p 8081:8080 \
   --volume=/var/run:/var/run:ro \
   --volume=/sys:/sys:ro \
   --volume=/var/lib/docker/:/var/lib/docker:ro \
@@ -34,7 +34,11 @@ docker run -d --rm --name=cadvisor \
   gcr.io/cadvisor/cadvisor
 
 
-docker run -d --rm test-image:v1
+
+
+
+
+docker run -d --rm --name=container-test-3 test-image:v1
 
 
 
