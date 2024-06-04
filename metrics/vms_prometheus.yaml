@@ -34,7 +34,18 @@ scrape_configs:
       - targets: [20.56.0.173:8081]
         labels:
               vm_name_cadvisor: cadvisor-lucid-eaa-api-vm
-
+      - targets: [20.4.66.1:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-aion-weu-prod-back-vm
+      - targets: [52.148.201.103:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-brt-weu-pd-back-vm
+      - targets: [20.24.79.9:8082]
+        labels:
+              vm_name_cadvisor: cadvisor-finca-jordan-eaa-dev-back-vm
+      - targets: [20.71.110.96:8089]
+        labels:
+              vm_name_cadvisor: cadvisor-swiss-weu-prod-dev-back-vm
 
 
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
