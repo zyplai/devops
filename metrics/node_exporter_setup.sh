@@ -33,12 +33,21 @@ docker run -d --rm --name=cadvisor \
   --volume=/var/run/docker.sock:/var/run/docker.sock:ro \
   gcr.io/cadvisor/cadvisor
 
+docker logs cadvisor
+docker stop cadvisor
 
 
+#with priveled access - for some images
+docker run -d --rm --name=cadvisor \
+  -p 8081:8080 \
+  --privileged=true \
+  --volume=/var/run:/var/run:ro \
+  --volume=/sys:/sys:ro \
+  --volume=/var/lib/docker/:/var/lib/docker:ro \
+  --volume=/var/run/docker.sock:/var/run/docker.sock:ro \
+  gcr.io/cadvisor/cadvisor
 
 
-
-docker run -d --rm --name=container-test-3 test-image:v1
 
 
 

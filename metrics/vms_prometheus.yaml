@@ -46,7 +46,81 @@ scrape_configs:
       - targets: [20.71.110.96:8089]
         labels:
               vm_name_cadvisor: cadvisor-swiss-weu-prod-dev-back-vm
-
+      - targets: [20.24.93.152:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-ahli-micro-amc-weu-pd-vm
+      - targets: [20.97.8.184:8081] #not working
+        labels:
+              vm_name_cadvisor: cadvisor-finca-guatemala-eaa-pd-back-vm
+      - targets: [20.247.4.27:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-bnk-eea-dev-back-vm
+      - targets: [20.71.254.12:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-spitamen-weu-prod-back-vm
+      - targets: [20.203.38.200:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-ahli-jordan-scoring-backend-test-vm
+      - targets: [104.46.58.147:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-activbank-weu-bf-pd-vm
+      - targets: [13.74.16.153:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-aloqabank-uz-scoring-transferforecast-backend-test-vm
+      - targets: [20.187.74.88:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-arnur-eaa-api-vm
+      - targets: [20.229.166.254:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-asia-weu-back-vm
+      - targets: [40.118.10.244:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-azfunc-weu-prod-back-vm
+      - targets: [20.205.114.74:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-capital-integration-eaa-prod-back-vm
+      - targets: [20.187.64.37:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-collection-scorapi-eeu-test-back-vm
+      - targets: [20.239.49.203:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-commercial-eaa-api-pd-vm
+      - targets: [20.187.75.67:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-finca-eaa-back-vm
+      - targets: [20.239.251.77:8082]
+        labels:
+              vm_name_cadvisor: cadvisor-finca-jordan-eaa-dev-front-vm
+      - targets: [20.16.250.71:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-gulf-weu-prod-back-vm  
+      - targets: [20.187.124.161:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-imon-eaa-api-vm 
+      - targets: [20.24.80.102:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-naimi-eaa-dev-prod-back-vm
+      - targets: [172.201.40.69:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-redash-weu-test-vm
+      - targets: [20.239.131.26:8082]
+        labels:
+              vm_name_cadvisor: cadvisor-zypl-career-eeu-test-front-vm  
+      - targets: [104.45.132.169:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-zypl-forms-weu-prod-back-vm  
+      - targets: [13.80.112.155:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-zypl-score-weu-pd-front-vm
+      - targets: [20.189.122.141:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-zyplscoreanalysis
+      - targets: [172.205.212.119:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-oxuc-weu-pd-back-vm 
+      - targets: [20.224.87.97:8081]
+        labels:
+              vm_name_cadvisor: cadvisor-mycar-weu-dev-prod-back-vm 
 
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
   - job_name: 'prometheus'
