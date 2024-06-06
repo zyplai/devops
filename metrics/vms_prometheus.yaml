@@ -142,6 +142,9 @@ scrape_configs:
       - targets: ['localhost:9100']
         labels:
           vm_name: prometheus-server
+      - targets: ['20.224.9.70:9100']
+        labels:
+          vm_name: loki-server          
       - targets: ['172.201.114.238:9100']
         labels:
           vm_name: logs-promtail-test
