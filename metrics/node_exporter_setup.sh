@@ -6,7 +6,6 @@ apt install prometheus-node-exporter \
 && service prometheus-node-exporter status
 
 
-
 #On Prometheus VM
 service prometheus status
 
