@@ -238,3 +238,15 @@ scrape_configs:
       - targets: ['20.224.87.97:9100']
         labels:
           vm_name: mycar-weu-dev-prod-back-vm
+      - targets: ['104.214.184.85:9100']
+        labels:
+          vm_name: elet-eaa-api-vm
+      - targets: ['52.184.80.39:9100']
+        labels:
+          vm_name: alash-eaa-api-vm
+      - targets: ['172.205.128.17:9100']
+        labels:
+          vm_name: aicouncil-vm
+
+
+
